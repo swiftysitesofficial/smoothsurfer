@@ -3,7 +3,7 @@
 Put simply "Smooth Surfer" is a lightweight custom cursor javascript library. I wanted a "vanilla" approach to creating a custom cursor since I don't use any javascript frameworks, such as react or nextJS.
 Although this library is mostly vanilla javascript you will have to include [ShoelaceJS](https://shoelace.style) in order for the cursor to display icons properly.
 
-##Include [ShoelaceJS](https://shoelace.style)
+## Include [ShoelaceJS](https://shoelace.style)
 Include ShoelaceJS in the head tag.
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/light.css" />
