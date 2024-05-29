@@ -1,5 +1,5 @@
 # Smooth Surfer
-![License: MIT](https://assets-global.website-files.com/5e0f1144930a8bc8aace526c/65dd9eb5aaca434fac4f1c34_License-MIT-blue.svg)
+![License: MT](https://assets-global.website-files.com/5e0f1144930a8bc8aace526c/65dd9eb5aaca434fac4f1c34_License-MIT-blue.svg)
 
 Put simply "Smooth Surfer" is a lightweight custom cursor javascript library. I wanted a "vanilla" approach to creating a custom cursor since I don't use any javascript frameworks, such as react or nextJS.
 Although this library is mostly vanilla javascript you will have to include [ShoelaceJS](https://shoelace.style) in order for the cursor to display icons properly.
