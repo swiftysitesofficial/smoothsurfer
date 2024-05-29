@@ -41,6 +41,7 @@ var smoothSurfer = {
 			spotify: "spotify",
 			apple: "apple",
 			twitch: "twitch",
+			github: "github",
 			facebook: "facebook",
 			messenger: "messenger",
 			whatsapp: "whatsapp",
@@ -49,21 +50,23 @@ var smoothSurfer = {
 		}
 	},
 	indication: function(surfer, data) {
-		instance = surfer.instance;
+		console.log(data);
+
+		const instance = surfer.instance;
 
 		//Editables
-		icon     = (data.icon != "none") ? ((data.icon == "none") ? "none" : data.icon) || smoothSurfer.icons.default : "";
-		iconSize = (data.iconSize == 0) ? 0 : data.iconSize || 20;
-		size     = (data.size == 0) ? 0 : data.size || 10;
+		const icon = (data.icon === "none") ? "" : (data.icon || smoothSurfer.icons.default);
+		const iconSize   = (data.iconSize == 0) ? 0 : data.iconSize || 20;
+		const size       = (data.size == 0) ? 0 : data.size || 10;
 
-		iconColor = data.iconColor || "#fff";
-		color     = data.color || "#000";
+		const iconColor = data.iconColor || "#fff";
+		const color     = data.color || "#000";
 
 		//Events
-		enter = data.enter || null;
-		leave = data.leave || null;
+		const enter = data.enter || null;
+		const leave = data.leave || null;
 
-		click = data.click || null;
+		const click = data.click || null;
 
 		document.querySelectorAll(data.interactibles).forEach(interactible => {
 			if (click != null) {
@@ -94,25 +97,13 @@ var smoothSurfer = {
 					data.leave();
 				}
 
+				instance.querySelector('.status-icon sl-icon').setAttribute('name', smoothSurfer.icons.default);
+
 				instance.style.backgroundColor = surfer.color;
 				document.documentElement.style.setProperty('--smooth-surfer-font-size', '20px');
 				document.documentElement.style.setProperty('--smooth-surfer-size', '10px');
 
 				instance.querySelector('.status-icon sl-icon').classList.remove('is-indicating');
-			});
-
-			document.body.addEventListener('mouseover', (event) => {
-		    	// Check if the mouse is over an element with the 'pointer-indicator' attribute
-			    if (event.target.closest('.scroll-title')) {
-			        instance.querySelector('.status-icon sl-icon').setAttribute('name', smoothSurfer.icons.default);
-			        instance.querySelector('.status-icon sl-icon').classList.add('is-indicating');
-			    }
-			});
-
-			document.body.addEventListener('mouseleave', () => {
-			    // Remove the 'is-indicating' class when the mouse leaves the body
-			    instance.style.backgroundColor = surfer.color;
-			    instance.querySelector('.status-icon sl-icon').classList.remove('is-indicating');
 			});
 		});
 	},
