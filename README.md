@@ -1,4 +1,4 @@
-#Smooth Surfer
+# Smooth Surfer
 
 Put simply "Smooth Surfer" is a lightweight custom cursor javascript library. I wanted a "vanilla" approach to creating a custom cursor since I don't use any javascript frameworks, such as react or nextJS.
 Although this library is mostly vanilla javascript you will have to include [ShoelaceJS](https://shoelace.style) in order for the cursor to display icons properly.
@@ -10,7 +10,7 @@ Include ShoelaceJS in the head tag.
 <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace-autoloader.js"></script>
 ```
 
-##Initialization
+## Initialization
 Getting started is easy, first we need to check whether or not the user is on a mobile device. If not then we can go ahead create the custom cursor.
 ```javascript
 //Check if the user is on a mobile device or not
@@ -21,7 +21,7 @@ if (!smoothSurfer.isMobileView()) {
 ```
 *Woohoo! You should have a brand new cursor at this point!*
 
-##Initial Customization
+## Initial Customization
 As of right now you can customize to of the cursors default properties; the initial size, and color.
 ```javascript
 smoothSurfer.instantiate({
@@ -30,7 +30,7 @@ smoothSurfer.instantiate({
 });
 ```
 
-##Smooth Surfer (Colors)
+## Smooth Surfer (Colors)
 I set some color options which I really like/use a lot, you're by no means obligated to use them, but are they're there if you need/want them.
 *Note: I may add some more color options later down the line.*
 ```javascript
@@ -46,7 +46,7 @@ smoothSurfer.colors.brown; //#7d3f1b
 smoothSurfer.colors.black; //#000
 smoothSurfer.colors.white; //#fff
 ```
-##Indicators
+## Indicators
 Indicators or indications are used to describe what happens when the cursor interacts/hovers over a particular element or elements. (Think of it as a tool tip that follows the cursor)
 *By default there are no hover/click events ( the cursor won't change/interact with elements)*
 
@@ -84,7 +84,7 @@ smoothSurfer.indication(cursor, {
 });
 ```
 
-##Indicator Icons
+## Indicator Icons
 I also set some icon options, but only a few as the rest can be found on the [ShoelaceJS](https://shoelace.style/components/icon) icon section of their website.
 ```javascript
 smoothSurfer.icons.default //Pointer icon
@@ -109,13 +109,13 @@ smoothSurfer.icons.socials.linkedin //Linked In
 ```
 
 
-##Indicators Customization
+## Indicators Customization
 Some other features of the indications you can customize include
 
-1. Color (**Default value: ** #000/black)
-2. Size (**Default value: ** 10px)
-3. IconColor (**Default value: ** #fff/white)
-4. IconSize (**Default value: ** 20px)
+1. Color (**Default value:** #000/black)
+2. Size (**Default value:** 10px)
+3. IconColor (**Default value:** #fff/white)
+4. IconSize (**Default value:** 20px)
 
 The example below creates a spotify icon, and is displayed when you hover over any elements with a custom attribute of "spotify"
 ```javascript
@@ -134,7 +134,7 @@ if (!smoothSurfer.isMobileView()) {
 }
 ```
 
-##Event handlers
+## Event handlers
 Indications can check whether or not they entered/hovered over an interactible/s
 ```javascript
 smoothSurfer.indication(cursor, {
@@ -174,7 +174,7 @@ smoothSurfer.indication(cursor, {
 });
 ```
 
-##Green Sock Animation platform (GSAP)
+## Green Sock Animation platform (GSAP)
 Smooth surfer can also work in conjunction with GSAP.
 
 CSS
@@ -216,10 +216,10 @@ if (!smoothSurfer.isMobileView()) {
 }
 ```
 
-##Lenis Smooth Scrolling Support
+## Lenis Smooth Scrolling Support
 **IMPORTANT NOTE:** As of right now "Smooth Surfer" does not include support for [Lenis](https://lenis.darkroom.engineering) smooth scrolling, but will in the very near future!
 
-#Contributing, Support.
+# Contributing, Support.
 Pull request are more than welcome. For major changes please open an issue first to discuss what you would like changed. I absolutely loved working on this and want to continue making this the library I know it can be.
 If you would like to support me on this project and/or future projects please share this with others, you can also feed my caffiene addiction here [Buy Me a Coffee](https://square.link/u/HhOgAwj3).
 
