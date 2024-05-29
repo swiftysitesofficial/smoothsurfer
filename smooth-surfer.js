@@ -50,8 +50,6 @@ var smoothSurfer = {
 		}
 	},
 	indication: function(surfer, data) {
-		console.log(data);
-
 		const instance = surfer.instance;
 
 		//Editables
