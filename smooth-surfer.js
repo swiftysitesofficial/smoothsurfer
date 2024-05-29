@@ -50,6 +50,8 @@ var smoothSurfer = {
 		}
 	},
 	indication: function(surfer, data) {
+		console.log(data);
+
 		const instance = surfer.instance;
 
 		//Editables
@@ -109,7 +111,6 @@ var smoothSurfer = {
 		instance.querySelector('.status-icon sl-icon').classList.remove('is-indicating');
 	},
 	instantiate: function(data = {}) {
-
 		function normalizedSpeed(speed, minSpeed = 1, maxSpeed = 100) {
             return (speed - minSpeed) / (maxSpeed - minSpeed);
         }
@@ -121,7 +122,7 @@ var smoothSurfer = {
 		//Cursor properties
 		color = data.color      || "#000";
 		size  = (data.size * 5) || 5;
-		speed = data.speed      || normalizedSpeed(17);
+		speed = normalizedSpeed(data.speed) || normalizedSpeed(17);
 
 		disableOnScroll = data.disableOnScroll || false;
 
@@ -249,7 +250,6 @@ var smoothSurfer = {
 			if (!hasScrolled) {
                 hasScrolled = true;
                 instance.querySelector('.status-icon sl-icon').classList.remove('is-indicating');
-                console.log('Remove indication!');
             }
 
             // Clear our timeout throughout the scroll
@@ -258,7 +258,6 @@ var smoothSurfer = {
             // Set a timeout to run after scrolling ends
             isScrolling = setTimeout(() => {
                 hasScrolled = false;
-                console.log('Cooled down!');
             }, 100); // Adjust the timeout as needed
 		});
 
