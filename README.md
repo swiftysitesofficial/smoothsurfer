@@ -231,6 +231,6 @@ if (!smoothSurfer.isMobileView()) {
 
 ## Contributing, Support.
 Pull request are more than welcome. For major changes please open an issue first to discuss what you would like changed. I absolutely loved working on this and want to continue making this the library I know it can be.
-If you would like to support me on this project and/or future projects please share this with others, you can also feed my caffiene addiction here [Buy Me a Coffee](https://square.link/u/HhOgAwj3).
+If you would like to support me on this project and/or future projects please share this with others, you can also feed my caffeine addiction here [Buy Me a Coffee](https://square.link/u/HhOgAwj3).
 
 
