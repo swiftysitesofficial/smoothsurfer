@@ -181,7 +181,7 @@ smoothSurfer.indication(cursor, {
 ```
 
 ## Green Sock Animation platform (GSAP)
-Smooth surfer can also work in conjunction with GSAP.
+Smooth surfer can also work in conjunction with [GSAP](https://gsap.com).
 
 CSS
 ```css
