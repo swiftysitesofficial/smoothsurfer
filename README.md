@@ -106,6 +106,12 @@ smoothSurfer.icons.socials.messenger //Wessenger by META for Facebook
 smoothSurfer.icons.socials.whatsapp //Whatsapp
 smoothSurfer.icons.socials.meta //META
 smoothSurfer.icons.socials.linkedin //Linked In
+
+//Arrow icons
+smoothSurfer.icons.arrows.left //Arrow left icon
+smoothSurfer.icons.arrows.right //Arrow right icon
+smoothSurfer.icons.arrows.up //Arrorw up icon
+smoothSurfer.icons.arrows.down //Arrow down icon
 ```
 
 
