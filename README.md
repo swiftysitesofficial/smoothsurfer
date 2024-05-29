@@ -115,7 +115,7 @@ smoothSurfer.icons.arrows.down //Arrow down icon
 ```
 
 
-## Indicators Customization
+## Indicator Customization
 Some other features of the indications you can customize include
 
 1. Color (**Default value:** #000/black)
@@ -135,7 +135,7 @@ if (!smoothSurfer.isMobileView()) {
     size: 15, //Changes cursor indication padding
     color: smoothSurfer.colors.green, //Sets background color to soft green
     iconColor: smoothSurfer.colors.white, //Sets icon color to white
-    iconSize: 15 //Changes icon size
+    iconSize: 30 //Changes icon size
   });
 }
 ```
