@@ -11,6 +11,12 @@ Include ShoelaceJS in the head tag.
 <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace-autoloader.js"></script>
 ```
 
+## Installation
+Check the lastest releases [here](https://github.com/swiftysitesofficial/smoothsurfer/releases), or include SmoothSurferJS into your project directly using [JSDeliver](https://www.jsdelivr.com).
+```html
+<script src='https://cdn.jsdelivr.net/gh/swiftysitesofficial/smoothsurfer@v1.0.1-beta/smooth-surfer.min.js'></script>
+```
+
 ## Initialization
 Getting started is easy, first we need to check whether or not the user is on a mobile device. If not then we can go ahead create the custom cursor.
 ```javascript
