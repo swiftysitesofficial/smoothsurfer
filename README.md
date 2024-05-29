@@ -22,7 +22,7 @@ if (!smoothSurfer.isMobileView()) {
 *Woohoo! You should have a brand new cursor at this point!*
 
 ## Initial Customization
-As of right now you can customize to of the cursors default properties; the initial size, and color.
+As of right now you can customize two of the cursors default properties; the initial size, and color.
 ```javascript
 smoothSurfer.instantiate({
   size: 20, //Default value is "5px" (this changes the cursors padding)
